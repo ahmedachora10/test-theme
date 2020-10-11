@@ -74,7 +74,7 @@ module.exports = {
                 }, ],
             },
             {
-                test: /\.(pug)$/,
+                test: /\.(pug|html)$/,
                 use: ["html-loader", "pug-html-loader"],
             },
         ],
@@ -102,9 +102,9 @@ module.exports = {
             inject: "body",
             template: "./src/index.pug",
             minify: {
-                removeComments: true,
-                collapseWhitespace: true,
-                removeAttributeQuotes: true,
+                removeComments: false,
+                collapseWhitespace: false,
+                removeAttributeQuotes: false,
             },
         }),
         new miniCssExtractPlugin(),

@@ -18,12 +18,12 @@
         +headline(servicesLang['headline'])
 
         //- Services List
-        .row.justify-content-center.aling-items-start
+        .row.justify-content-center.aling-items-start.f-d
             each service in servicesLang['services']
                 .col-lg-4.col-md-6.col-sm-12
                     .card.mb-3
                         header.card-header.py-3
-                            .row.justify-content-center.align-items-center.r-flex
+                            .row.justify-content-center.align-items-center.r-flex.f-d
                                 i(class=`fa fa-${servicesIcon[i]}`)
                                 h5.card-title=service[0]
                         .card-body
