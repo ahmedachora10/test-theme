@@ -1,0 +1,35 @@
+/* Guid Style Begin */
+
+.guid {
+    .headline {
+        text-align: center;
+        margin-bottom: 40px !important;
+    }
+    div.guids {
+        position: relative;
+        background-color: darken($color: $secondary-color, $amount: 40);
+        span {
+            border: 1px solid lighten($color: $secondary-color, $amount: 40);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 25px;
+            font-weight: bolder;
+            margin: 0 auto;
+            color: lighten($color: $secondary-color, $amount: 40);
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.5em;
+            text-align: center;
+            color: lighten($color: $secondary-color, $amount: 48);
+        }
+    }
+}
+
+
+/* Guid End */

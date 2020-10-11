@@ -1,0 +1,32 @@
+<!-- Services Section Begin -->
+-
+    const servicesIcon = [
+        "dollar-sign",
+        "check-circle",
+        "image",
+        "play-circle",
+        "mail-bulk",
+        "user-shield",
+        "box-open",
+        "house-damage",
+        "gift",
+    ];
+    let i = 0;
+
+.services.my-5
+    .container
+        +headline(servicesLang['headline'])
+
+        //- Services List
+        .row.justify-content-center.aling-items-start
+            each service in servicesLang['services']
+                .col-lg-4.col-md-6.col-sm-12
+                    .card.mb-3
+                        header.card-header.py-3
+                            .row.justify-content-center.align-items-center.r-flex
+                                i(class=`fa fa-${servicesIcon[i]}`)
+                                h5.card-title=service[0]
+                        .card-body
+                            p.card-text=service[1]
+                - i++;
+<!-- Services End -->

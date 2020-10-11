@@ -1,0 +1,20 @@
+include ./views/helper/_var
+include ./views/lang/en/_header.lang.pug
+include ./views/lang/en/_about.lang.pug
+include ./views/lang/en/_services.lang.pug
+include ./views/lang/en/_guid.lang.pug
+
+
+block Public
+    - pageTitle = 'Home'
+    //- - lang = "ar"
+
+
+<!DOCTYPE html>
+html(lang=lang dir=(lang === "en") ? 'ltr' : 'rtl')
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=pageTitle
+    body
+        include ./views/pages/_home
